@@ -1,0 +1,38 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+
+# Laptop docked
+
+VGA1=`xrandr -q | grep 'VGA1' | awk '{ print $2 }'`
+  if [ $VGA1 = "connected" ];
+  then
+    xrandr --output VGA1 --mode 1920x1080 --primary --auto --left-of LVDS1
+    setxkbmap -layout gb
+  else
+    xrandr -s 0
+  fi
+
+nitrogen --restore &
+thunar --daemon &
+compton --config ~/.config/compton.conf &
+dropboxd &
+tint2 &
+cairo-dock &
+owncloud &
+nm-applet
+numlockx &
