@@ -1,0 +1,106 @@
+include ".Xcolors"
+
+Xft.hinting:            false
+Xft.hintstyle:          hintnone
+Xft.antialias:          true
+Xft.rgba:               rgba
+Xft.dpi:                96
+
+!urxvt settings
+urxvt*depth:            32
+urxvt*geometry:         56x38
+urxvt*saveLines:        65535
+urxvt*scrollTtyKeypress:true
+urxvt*scrollTtyOutput:  false
+urxvt*scrollBar:        false
+urxvt*loginShell:       true
+urxvt*shading:          55
+urxvt*tintColor:        #202222
+urxvt*font:             xft:DejaVu Sans Mono:normal:size=9
+!urxvt*print-pipe:       cat > $(echo urxvt.dump.$(date +'%Y%M%d%H%m%S'))
+urxvt*secondaryScroll:  true
+urxvt*background:       rgba:0000/0000/0000/dddd
+urxvt*cursorBlink:      true
+urxvt*cursorUnderline:  true
+urxvt*perl-ext-common:  default,clipboard
+urxvt*foreground:       rgba:ffff/ffff/ffff/dddd
+urxvt*urlLauncher:      /usr/bin/firefox
+urxvt*matcher.button:   1
+urxvt*xftAntialias:     true
+urxvt*borderless:       true
+urxvt*internalBorder:   5
+urxvt*externalBorder:   5
+URxvt*imLocale:         de_DE.UTF-8
+urxvt*perl-ext-common:  default,matcher,clipboard
+!urxvt.perl-ext-common:  default,tabbed
+
+!---Colors----
+!black
+*color0:#050505
+*color8:#a9a9a9
+!red
+*color1:#CC0000
+*color9:#EF2929
+!green
+*color2:#3B8526
+*color10:#58A642
+!yellow
+*color3:#e0a524
+*color11:#edB85c
+!blue
+*color4:#1D576D
+*color12:#31788E
+!magenta
+*color5:#500000
+*color13:#590000
+!cyan
+*color6:#8edcff
+*color14:#87adfc
+!white
+*color7:#dedede
+*color15:#f2f2f2
+
+
+! ========== X CALC============= 
+!xcalc*geometry: 200x275
+!xcalc.ti.bevel.background: #111111
+!xcalc.ti.bevel.screen.background: #000000
+!xcalc.ti.bevel.screen.DEG.background: #000000
+!xcalc.ti.bevel.screen.DEG.foreground: LightSeaGreen
+!xcalc.ti.bevel.screen.GRAD.background: #000000
+!xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
+!xcalc.ti.bevel.screen.RAD.background: #000000
+!xcalc.ti.bevel.screen.RAD.foreground: LightSeaGreen
+!!xcalc.ti.bevel.screen.INV.background: #000000
+!xcalc.ti.bevel.screen.INV.foreground: Red
+!xcalc.ti.bevel.screen.LCD.background: #000000
+!xcalc.ti.bevel.screen.LCD.foreground: LightSeaGreen
+!xcalc.ti.bevel.screen.LCD.shadowWidth: 0
+!xcalc.ti.bevel.screen.M.background: #000000
+!xcalc.ti.bevel.screen.M.foreground: LightSeaGreen
+!xcalc.ti.bevel.screen.P.background: #000000
+!xcalc.ti.bevel.screen.P.foreground: Yellow
+!xcalc.ti.Command.foreground: White
+!xcalc.ti.Command.background: #777777
+!xcalc.ti.button5.background: Orange3
+!xcalc.ti.button19.background: #611161
+!xcalc.ti.button18.background: #611161
+!xcalc.ti.button20.background: #611111
+!xcalc.ti.button25.background: #722222
+!xcalc.ti.button30.background: #833333
+!xcalc.ti.button35.background: #944444
+!xcalc.ti.button40.background: #a55555
+!xcalc.ti.button22.background: #222262
+!xcalc.ti.button23.background: #222262
+!xcalc.ti.button24.background: #222272
+!xcalc.ti.button27.background: #333373
+!xcalc.ti.button28.background: #333373
+!xcalc.ti.button29.background: #333373
+!xcalc.ti.button32.background: #444484
+!xcalc.ti.button33.background: #444484
+!xcalc.ti.button34.background: #444484
+!xcalc.ti.button37.background: #555595
+!xcalc.ti.button38.background: #555595
+!xcalc.ti.button39.background: #555595
+!XCalc*Cursor:                 hand2
+!XCalc*ShapeStyle:             rectangle
